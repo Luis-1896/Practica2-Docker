@@ -2,9 +2,9 @@
 FROM node:alpine
 
 # Install some dependencies
-COPY ./ /test/
+COPY ./package*.json ./
 RUN npm install
 
 
 # Defualt command
-CMD ["npm","start"]
+CMD ["npm", "start"]
