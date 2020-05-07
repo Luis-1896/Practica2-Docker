@@ -2,7 +2,7 @@
 FROM node:alpine
 
 # Install some dependencies
-COPY * ./
+COPY ./ ./
 RUN npm install
 
 
